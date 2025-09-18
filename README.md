@@ -18,8 +18,8 @@ itunymous is a modern real-time chat app for anonymous conversations based on us
 
 ## How It Works
 1. **Registration**: Users sign up with email and verify via a 5-minute code.
-2. **Profile Setup**: Specify interests and hobbies for matching.
-3. **Matching**: System automatically pairs users with similar interests from a waiting pool.
+2. **Profile Setup**: Specify interests for matching.
+3. **Matching**: System pairs users with similar interests from a waiting pool.
 4. **Chatting**: Real-time conversations in private rooms; view history, end sessions anytime.
 5. **Sessions**: Automatic management; frontend connects to backend at localhost:5000.
 
@@ -43,5 +43,17 @@ MAIL_PASSWORD=your_app_password
 *Notes: Use Gmail app password; don't commit .env; create .env.example.*
 
 ## Running
-1. Backend: `cd backend && source venv/bin/activate && python main.py` (runs on http://localhost:5000).
-2. Frontend: `cd app && npm run dev` (runs on http://localhost:3000).
+1. **Backend**:
+   ```bash
+   cd backend
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   python main.py
+   ```
+   Runs on `http://localhost:5000`.
+
+2. **Frontend**:
+   ```bash
+   cd ../app
+   npm run dev
+   ```
+   Runs on `http://localhost:3000`.
